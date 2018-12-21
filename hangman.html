@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="mini games for mobile fun">
+    <meta name="theme-color" content="#4D4656">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/keyboard.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/hangman.js"></script>
+    <script src="js/sw_register.js"></script>
+    <link rel="manifest" href="js/manifest.json">
+    <script src="js/sw_register.js"></script>
+</head>
+<body>
+        <button id="js-page-back" onclick="window.history.back();"><img src="images/back.svg" alt="Go back"></button>
+    <div id="hangmanstate-wrapper"><img src="images/gallow_00.png" id="js-hangmanstate-image" alt="hangman state"/>    <div id="underscores"></div></div>
+<div class="keyboard-wrapper">
+  <div class="keyboard-section">
+<div class= "keyboard-zoom js-keyboard-btn" id="q"><span>Q</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="w"><span>W</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="e"><span>E</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="r"><span>R</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="t"><span>T</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="y"><span>Y</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="u"><span>U</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="i"><span>I</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="o"><span>O</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="p"><span>P</span></div>
+    </div>
+  
+  <div class="keyboard-section">
+<div class= "keyboard-zoom js-keyboard-btn" id="a"><span>A</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="s"><span>S</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="d"><span>D</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="f"><span>F</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="g"><span>G</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="h"><span>H</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="j"><span>J</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="k"><span>K</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="l"><span>L</span></div>
+    </div>
+  
+    <div class="keyboard-section">
+<div class= "keyboard-zoom js-keyboard-btn" id="z"><span>Z</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="x"><span>X</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="c"><span>C</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="v"><span>V</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="b"><span>B</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="n"><span>N</span></div>
+<div class= "keyboard-zoom js-keyboard-btn" id="m"><span>M</span></div>      
+    </div>
+</div>
+<div id="fullscreen">
+    <main>
+        <div id="lose-popup">
+            <p id="hangman-message"></p>
+            <button id="js-page-replay" onclick="location.reload();"><img src="images/repeat.svg" alt="play again"></button>
+            <button id="js-page-home" onclick="location.href='index.html';"><img src="images/home.svg" alt="Home"></button>
+        </div>
+    </main>
+</div>
+</body>
+</html>

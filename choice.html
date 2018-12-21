@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile Fun</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="mini games for mobile fun">
+    <meta name="theme-color" content="#4D4656">
+    <script src="js/sw_register.js"></script>
+    <link rel="manifest" href="js/manifest.json">
+    <script src="js/sw_register.js"></script>
+    <noscript>can't load scripts</noscript>
+</head>
+<body>
+    <main>
+      <button id="js-page-back" onclick="window.history.back();"><img src="images/back.svg" alt="Go back"></button>
+      <button id="js-page-hangman" onclick="location.href='hangman.html';"><img src="images/hangman.svg" alt="hangman"></button>
+      <button id="js-page-rps" onclick="location.href='rps.html';"><img src="images/rps.svg" alt="rps"></button>
+    </main>
+</body>
+</html>

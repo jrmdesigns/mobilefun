@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="mini games for mobile fun">
+    <meta name="theme-color" content="#4D4656">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <noscript>can't load scripts</noscript>
+</head>
+<body>
+    <main>
+    <button id="js-page-back" onclick="window.history.back();"><img src="images/back.svg" alt="Go back"></button>
+    <div id="js-pc-choice"><img src="images/scissors.svg" id="js-ai-choice" alt="stone" class="rps-ai-image"/></div>
+    <div id="js-rps-message"></div>
+    <div id="winning-streak">Winning streak:<span id="js-winning-streak"></span></div>
+
+    <div id="rps-btn-container">
+        <button id="0" name="stone" class="js-rps-buttons"><img src="images/stone.svg" alt="stone" class="rps-button-image"></button>
+        <button id="1" name="contract" class="js-rps-buttons"><img src="images/contract.svg" alt="paper" class="rps-button-image"></button>
+        <button id="2" name="scissors" class="js-rps-buttons"><img src="images/scissors.svg" alt="scissors" class="rps-button-image"></button>
+    </div>
+    </main>
+
+    <script src="js/rps.js"></script>
+    <!-- To create a new element: <button id="$" class="js-rps-button">ELEMENT</button> replace $ with number and ELEMENT for the image -->
+</body>
+</html>

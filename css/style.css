@@ -1,0 +1,195 @@
+@font-face{
+    font-family: robot;
+    src: url('robo.ttf');
+}
+
+body{
+    font-family: robot;
+    margin:0;
+    padding:0;
+    background-color: #4D4656;
+    font-weight: bold;
+}
+
+#js-page-settings{
+    background-color: transparent;
+    border: 0;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    outline: 0;
+}
+
+#js-page-settings:focus{
+        border-radius: 50%;
+    outline: 0;
+}
+#js-page-settings img{
+    width: 50px;
+    height: 50px;
+}
+
+#js-pc-choice{
+    width: 50vw;
+    max-width: 300px;
+    height: 50vw;
+    max-height: 300px;
+    margin: 15vh auto 0 auto;
+}
+
+#js-pc-choice img{
+    width: 100%;
+    height: 100%;
+}
+
+#js-rps-message{
+    color: lightgreen;
+}
+
+
+
+
+
+
+
+
+.js-rps-buttons{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding:0;
+    border:0;
+    background-color: transparent;
+
+}
+
+.js-rps-buttons:focus{
+    border: 5px solid green;
+    border-radius: 50%;
+    outline: 0;
+}
+
+.rps-button-image{
+    margin:0;
+    padding:0;
+    width: 90px;
+    height: 90px;
+}
+
+#rps-btn-container{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 25px;
+    width: 100vw;
+}
+
+#js-rps-message{
+    margin-top: 25%;
+    text-align: center;
+    font-size: 30px;
+}
+
+#underscores{
+    letter-spacing: 10px;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: lightgreen;
+}
+
+#hangmanstate-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+#hangmanstate-wrapper img{
+    max-height: 200px;
+}
+
+
+button{
+    width: 25vw;
+    height: 25vw;
+    background-color: transparent;
+    border: none;
+}
+
+button img{
+    width: 100%;
+    /* height: ; */
+}
+#js-page-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#js-page-hangman, #js-page-replay{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#js-page-scores, #js-page-rps, #js-page-home{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#logo{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 50%;
+}
+
+#js-page-back{
+    height: 50px;
+    width: 50px;
+    
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    
+}
+
+#fullscreen{
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
+#hangman-message{
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-48%);
+}
+
+#js-page-back img{
+    width: 50px;
+    height: 50px;
+}
+
+.disabled{
+    visibility: hidden;
+}
+
+#winning-streak{
+    color: lightblue;
+    text-align: center;
+}
